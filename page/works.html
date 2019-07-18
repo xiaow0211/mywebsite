@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <mate charset="utf-8" />
+    <title>个人作品</title>
+    <link rel="stylesheet" type="text/css" href="../css/default-clear.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<style>
+    ::-webkit-scrollbar{
+   display:none;
+}
+#wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+#works {
+    width: 100%;
+    background-color: rgba(0, 0, 2, 0.01);
+    padding: 50px 0;
+    box-shadow: #ccc 10px 10px 20px;
+    text-align: center;
+}
+
+#works ul {
+    display: inline-block;
+    width: 100%;
+    padding: 50px 50px;
+}
+
+#works ul li {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 220px;
+    margin: 15px 20px;
+    overflow: hidden;
+}
+
+#works #work {
+    width: 300px;
+    height: 220px;
+    position: relative;
+}
+
+#works #work .pic {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+    transition: all .3s;
+    box-sizing: border-box;
+    z-index: 5;
+    transform: translate(0, 10px);
+}
+
+#works #work .midPic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    transform: scale(0.95) translate(0, 20px);
+    z-index: 4;
+}
+
+#works #work .smallPic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    transform: scale(0.9) translate(0, 30px);
+    z-index: 3;
+}
+
+#works #work .tip {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    transition: all .3s;
+    transform: translate(0, 170px);
+}
+
+#works #work:hover .normal {
+    transform: translate(0, 0px);
+}
+
+#works #work:hover .midPic {
+    transform: scale(0.93, 0.93) translate(0, 18px);
+}
+
+#works #work:hover .smallPic {
+    transform: scale(0.88, 0.92) translate(0, 30px);
+}
+
+#works #work:hover .tip {
+    color: #F20D0D;
+}
+</style>
+
+<body>
+    <div id="wrap">
+        <!-- 顶部导航 -->
+        <nav>
+            <ul id="topNav">
+                <li id="welcom">welcom to my website!</li>
+                <li class="tab"><a href="../index.html" target="_self">首&nbsp;页</a></li>
+                <li class="tab"><a href="#" target="_self">作&nbsp;品</a></li>
+                <li class="tab"><a href="collection.html" target="_self">个人收藏</a></li>
+                <li class="tab"><a href="../index.html#chat">留&nbsp;言&nbsp;板</a></li>
+            </ul>
+            <span id="timer">2017/15/15 15:66</span>
+        </nav>
+        <div id="works">
+            <div class="subtitle">
+                <span class="left" style="background-position: 0px -108px"></span>
+                <span class="text">&nbsp;个人作品&nbsp;</span>
+                <span class="right" style="background-position: 0px -162px"></span>
+            </div>
+            <ul id="ul">         
+            </ul>
+        </div>
+        <!-- 回到顶部按钮 -->
+        <div id="totop" class="menu">
+            <span></span>
+        </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/works.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
