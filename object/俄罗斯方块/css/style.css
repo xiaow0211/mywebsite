@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background: #eee;
+}
+
+#game-containar {
+    display: none;
+}
+
+#game-containar,
+#game-start {
+    position: relative;
+    width: 690px;
+    height: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border: 1px solid green;
+}
+
+#game-start {
+    box-sizing: border-box;
+    height: 600px;
+    width: 390px;
+    background: url('../image/background.jpg');
+    background-size: 100%;
+    padding-top: 250px;
+}
+
+#game-start p {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#game-start p button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+#game-start p button:hover {
+    background: #eee;
+}
+
+#game-time-panel {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    top: 0;
+}
+
+#game-help-panel {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    top: 200px;
+}
+
+#game-level-panel {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    bottom: 0;
+}
+
+#game-next-panel {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    right: 0;
+    top: 0;
+}
+
+#game-setting-panel {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    right: 0;
+    top: 200px;
+}
+
+#game-score-panel {
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    right: 0;
+    bottom: 100px;
+}
+
+#game-highscore-panel {
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    right: 0;
+    bottom: 25px;
+}
+
+#panel-title {
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#panel-body {
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    line-height: 50px;
+}
+
+#game-help-panel #panel-body {
+    line-height: 32px;
+}
+
+#game-setting-panel button {
+    width: 50px;
+    height: 25px;
+}
+
+#game-main {
+    position: absolute;
+    height: 600px;
+    width: 390px;
+    left: 150px;
+    top: 0;
+    border: 1px solid green;
+}
+
+.modal-dialog {
+    display: none;
+}
+
+.modal-dialog .modal-body {
+    position: fixed;
+    height: 300px;
+    width: 390px;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -195px;
+    background: #000;
+    z-index: 100;
+    text-align: center;
+    color: #fff;
+}
+
+.modal-dialog::after {
+    content: ' ';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .3);
+}

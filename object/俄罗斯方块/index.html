@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<head>
+    <mate charset="utf-8" />
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div id="game-start">
+        <p>
+            <button id="btn-start">开始游戏</button>
+        </p>
+        <p>
+            <button id="btn-setting">游戏设置</button>
+        </p>
+    </div>
+    <div id="game-containar">
+        <div id="game-time-panel">
+            <div id="panel-title">游戏时间</div>
+            <div id="panel-body">
+                <canvas id="timer"></canvas>
+            </div>
+        </div>
+        <div id="game-help-panel">
+            <div id="panel-title">游戏帮助</div>
+            <div id="panel-body">
+                <p>↑:翻转方块</p>
+                <p>↓:加速下落</p>
+                <p>←:向左移动</p>
+                <p>→:向右移动</p>
+            </div>
+        </div>
+        <div id="game-level-panel">
+            <div id="panel-title">游戏关卡</div>
+            <div id="panel-body">
+                <canvas id="level"></canvas>
+            </div>
+        </div>
+        <div id="game-main">
+            <canvas id="c_game"></canvas>
+        </div>
+        <div id="game-next-panel">
+            <div id="panel-title">下一方块</div>
+            <div id="panel-body">
+            <canvas id="nextshape"></canvas>
+            </div>
+        </div>
+        <div id="game-setting-panel">
+            <div id="panel-title">游戏设置</div>
+            <div id="panel-body">
+                <p>
+                    <button id="button-pause">暂停</button>
+                </p>
+                <p>
+                    <button id="button-setting">设置</button>
+                </p>
+            </div>
+        </div>
+        <div id="game-score-panel">
+            <div id="panel-title">当前得分</div>
+            <div id="panel-body">
+                <canvas id="score"></canvas>
+            </div>
+        </div>
+        <div id="game-highscore-panel">
+            <div id="panel-title">最高得分</div>
+            <div id="panel-body">
+                <canvas id="Highscore"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <label for="ck-sound">打开音乐</label>
+            <input type="checkbox" id='ck-sound'>
+            <br><br>
+            <button id="btn-dialog-close">关闭</button>
+        </div>
+    </div>
+    <script src="vendor/howler.min.js"></script>
+    <script src="js/Config.js"></script>
+    <script src="js/Resource.js"></script>
+    <script src="js/Canvas.js"></script>
+    <script src="js/Keyboard.js"></script>
+    <script src="js/Score.js"></script>
+    <script src="js/Timer.js"></script>
+    <script src="js/Level.js"></script>
+    <script src="js/Nextshape.js"></script>
+    <script src="js/HighScore.js"></script>
+    <script src="js/Block.js"></script>
+    <script src="js/Shape.js"></script>
+    <script src="js/Board.js"></script>
+    <script src="js/Tetris.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

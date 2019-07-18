@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+canvas{
+	display: block;
+    width: 960px;
+    height: 720px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+}
+#control{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 200px;
+	height: 680px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+#control #feedback{
+	height: 80px;
+	padding: 0 0  20px 0;
+}
+#control #feedback div{
+	margin: 5px 0;
+}
+#control #feedback i{
+	font-style: normal;
+}
+#control #feedback i,span{
+	font-size: 16px;
+	color: #000;
+}
+#control #feedback #tips{
+	display: none;
+}
+#control #buttons .button{
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #eee;
+	padding: 3px 4px;
+}
+#control #buttons .button a{
+	color: #000;
+	text-decoration: none;
+}
+#control #hint{
+	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ccc;
+}
+#control #hint img{
+    width: 100%;
+    height: 100%;
+}
+#control #auther{
+    position: absolute;
+    bottom: 10px;
+	font-size: 12px;
+}

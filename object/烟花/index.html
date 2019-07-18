@@ -1,0 +1,35 @@
+<html>
+  <head>
+      <title>烟花</title>
+  </head>
+  <style>
+*{
+margin:0;
+padding:0;
+}
+canvas{
+display:block;
+margin:0 auto;
+background-color:rgba(0,5,15,.8)
+}
+#p{
+position:absolute;
+top:50px;
+left:50px;
+z-index:100;
+font-size:26px;
+color:#fff;
+}
+ </style>
+  <body>
+  <canvas id="canvas"></canvas>
+  <p id="p">有个BUG，不想改了就这么放着吧，也找不到问题在哪，有大佬看懂的吗</p>
+  <script>
+  var timestamp = (new Date()).getTime();
+  var new_element = document.createElement("script");
+  new_element.setAttribute("type", "text/javascript");
+  new_element.setAttribute("src", "main.js?v="+timestamp);
+  document.body.appendChild(new_element);
+  </script>
+  <body>
+</html>

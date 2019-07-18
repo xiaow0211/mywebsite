@@ -1,0 +1,72 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1547213931718'); /* IE9 */
+  src: url('iconfont.eot?t=1547213931718#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMUAAsAAAAAB0QAAALFAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqCCIF2ATYCJAMQCwoABCAFhG0HQBtgBsiemjyBBAooCgtWwRj4OCKoH3vde++CqEABSpKsosISwccmEtuOr3A1osZWmLIR/8/9sldGnaJadiWAD8kHnGy2CApI1xEKVQ2k2yNUJ8/eOeOoKwLZfsPq9d0n7p3+3wAKZD77lstYm/Y6//QvCru48y5MxxoUWYGUIDeM3UTgEA4TaDfGIWizurETIiUwKhAPisRBZC4spZVrFZprFqb4gjCt5YVPwGf++fjPF5EUTRWYuH1VJULpz7bfwSFPXjBICSjn88FaRsU8kMRNbfpMiLB4Idp/E2oJaNWq8LPtV/jv8t/SxY7l8C+PIlSiGajuBAuarboxJaYo/AqnCH4HV6nwQ4a3ohlbwJHGHSkMVWnuBPv1Jho9ROoWR5KOzxfPchMPThZOJ6khp8TsTCdPl4WJjn29oJDnj4l7225FEBD8lLoOC+u2tadrbQJKab/vLzC/D4mP2eOJSrMXnecak/4ZvUBe0V8rR0YqScf99Nfcylz8HNgADTUjpAmA+o3ngEZtK+n3f8fy1929kZ7Cv60xCX4M32g83JAwLtOq0Fv5s5U9GRmqgTPT12BFFErjt5wsaIdufnGefp/mMA31ThJac0oLRYtRVK3GyeTOo0mHBTRrtYJ2c2qWdxhAhYhsw6xVBaHXNYpu31H1eiaT+xFNhv1Bs94IQbvDSNmww2Qo0RUUcwyLiJ9EimCZBLlZtKhtx1JA52hWzfndmPqVGPK6PMVcDTYxnWOKf0zyMUYQoZaBqpXjsK5byKaWigXmkhmz891uUvcil2AZEG0DhXEYTITwJiEKgcVEaGsmuvT+dpgkQMehLbSBZDeM8lO6R7xcPD3IGoPZi3Yvz/iNkfgwDIEQlMWAVCs+TIdpC2LX91NhAsZFHpG05XNr9Uhfg2t9k/GF26AduCSjRI2MJnnGCVqogc1AJOFMaULBdgAAAAA=') format('woff2'),
+  url('iconfont.woff?t=1547213931718') format('woff'),
+  url('iconfont.ttf?t=1547213931718') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1547213931718#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.phone{
+	position: relative;
+	margin: 20px auto;
+	width: 300px;
+	height: 600px;
+	background-color: #000;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+}
+.horn{
+	width: 35px;
+	height: 5px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	background-color: #777;
+	margin: 25px auto;
+}
+.camera{
+	position: absolute;
+	top: 22px;
+	right: 70px;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background-color: #283734;
+}
+.screen{
+	width: 270px;
+	height: 480px;
+	margin: 0px auto;
+	background-color: #ccc;
+}
+.bottom_control{
+	width: 86%;
+	height: 60px;
+	margin-left: 7%;
+	font-family: "iconfont" !important;
+}
+.bottom_control .button{
+	margin: 18px 33px;
+	width: 20px;
+	height: 20px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #ccc;
+	float: left;
+}
+.menu:before {
+  content: "\e551";
+}
+.home:before {
+  content: "\e702";
+}
+.back:before {
+  content: "\e606";
+}

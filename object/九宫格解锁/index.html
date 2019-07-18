@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<title>九宫格解锁</title>
+<script src="jQuery.js"></script>
+<script src="min.js"></script>
+<style type="text/css">
+body,div,span,canvas,p{
+margin:0;
+padding:0;
+}
+#wrap{
+display:block;
+height:1400px;
+width:1000px;
+background-color:rgba(0,0,0,0.7);
+position:relative;
+}
+img{
+position:absolute;
+opacity:0.9;
+z-index:1;
+}
+.digit{
+display:block;
+height:6px;
+width:6px;
+background-color:white;
+border-radius:4px;
+z-index:999;
+position:absolute;
+}
+#canvas{
+position:absolute;
+top:0;
+left:0;
+}
+.tip{
+display:block;
+width:200px;
+margin:0 auto;
+position:relative;
+top:200px;
+font-size:20px;
+text-align:center;
+color:#fff;
+}
+#home{
+display:none;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+   <img id="lock" src="lock.jpg"/>
+   <img id="home" src="home.jpg"/>
+<div class="tip"><p>请解锁!</p></div>
+<div class="digit" id="digit_1_1"></div>
+<div class="digit" id="digit_1_2"></div>
+<div class="digit" id="digit_1_3"></div>
+<div class="digit" id="digit_2_1"></div>
+<div class="digit" id="digit_2_2"></div>
+<div class="digit" id="digit_2_3"></div>
+<div class="digit" id="digit_3_1"></div>
+<div class="digit" id="digit_3_2"></div>
+<div class="digit" id="digit_3_3"></div>
+</div>
+<canvas id="canvas" style="border:0px solid #c3c3c3;">您的浏览器不支持canvas,请更换浏览器或将浏览器升级到最新版本！
+</canvas>
+</body>
+</html>

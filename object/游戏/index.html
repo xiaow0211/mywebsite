@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<title>游戏</title>
+<script src="jQuery.js"></script>
+<script src="min.js"></script>
+<style type="text/css">
+body,div,canvas{
+margin:0;
+padding:0;
+}
+body{
+background-color:#eee;
+}
+.header{
+margin-top:20px;
+margin-left:80%;
+text-shadow:2px 2px 2px #555;
+}
+.play{
+display:block;
+margin:0 auto;
+width:100px;
+height:50px;
+border:2px solid #000;
+border-radius:5px;
+font-size:32px;
+text-align:center;
+line-height:50px;
+}
+.tip{
+opacity:0;
+display:block;
+width:300px;
+margin:0 auto;
+position:relative;
+top:100px;
+font-size:40px;
+text-align:center;
+color:#000;
+}
+</style>
+</head>
+<body>
+   <div class="header">
+      <p>score:<span>0</span></p>
+   </div>
+<div class="tip">Game over!</div>
+<canvas id="canvas" width="200" height="200" style="border:0px solid #c3c3c3;">您的浏览器不支持canvas,请更换浏览器或将浏览器升级到最新版本！
+</canvas>
+<div class="play">play</div>
+</body>
+</html>
