@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <mate charset="utf-8" />
+    <title>微软 Bing 搜索 - 仿制</title>
+    <link rel="stylesheet" href="style-bg.css" id="css"/>
+</head>
+<body>
+	<div class="mask" id="mask"></div>
+    <header>
+        <ul class="nav1">
+            <li><a href="#">图片</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="#">学术</a></li>
+            <li><a href="#">词典</a></li>
+            <li><a href="#">地图</a></li>
+            <li><span>|</span></li>
+            <li class="LI7"><a href="#">Office Online</a>
+                <div class="box">
+                    <ul>
+                        <li>
+                            <a href="#" title="Word Online">
+                                <div class="img"></div>
+                                <p>Word Online</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Excel Online">
+                                <div class="img"></div>
+                                <p>Excel Online</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="PowerPoint Online">
+                                <div class="img"></div>
+                                <p>PowerPoint Online</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# " title="OneNote Online ">
+                                <div class="img "></div>
+                                <p>OneNote Online</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# " title="Sway ">
+                                <div class="img "></div>
+                                <p>Sway</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# " title="OneDrive ">
+                                <div class="img "></div>
+                                <p>OneDrive</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# " title="日历 ">
+                                <div class="img "></div>
+                                <p>日历</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# " title="人脉 ">
+                                <div class="img "></div>
+                                <p>人脉</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="LI8 "><a href="# ">Outlook.com</a></li>
+        </ul>
+        <ul class="nav2">
+            <a href="#">
+                <li><i>登陆</i><span class="nav2-icon1"></span></li>
+            </a>
+            <a href="#">
+                <li><span class="nav2-icon2"></span></li>
+            </a>
+            <div id="set-menu" class="set-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+            				<span class="set-icon" style="background-position: 0px 0px;"></span>
+            					设置
+							<span class="up-and-down up"></span></a>
+							<div class="set-item item-close">
+								<a href="#"><h5>语言</h5><p>简体中文</p></a>
+                                <a href="#"><h5>国家/地区</h5><p>中华人民共和国</p></a>
+                                <a href="#"><h5>更多</h5></a>
+                            </div>
+                        
+                    </li>
+                    <li><a href="#"><span class="set-icon" style="background-position: -18px 0px;"></span>搜索历史记录</a></li>
+                   <li><a href="#"><span class="set-icon" style="background-position: -54px 0px;"></span>我的收藏项</a></li>
+                   <li><a href="#"><span class="set-icon" style="background-position: -72px 0px;"></span>反馈</a></li>
+                   <li><a href="#"><span class="set-icon" style="background-position: -90px 0px;"></span>安全搜索<span class="set-right">严格</span></a></li>
+                   <li><a href="#"><span class="set-icon" style="background-position: -108px 0px;"></span>自定义主页</a></li>
+                   <li><a href="#" style="padding-left:56px">显示菜单栏<span class="opener open"><img class="rms_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAgCAYAAAB+ZAqzAAACH0lEQVRYw9WYzS8DURTFh4WFj4XYaITEwr4Rmy5Ek0YaYoEdO4mk7aIVG2XDzsaf0n+BjYQQjY+IhCrSWGMs0LTacU7dJ6NqwZsxo8kvue30zTu9b+69JzUsyzIU2Wy2D6xm318meAGvLlGWPY7BIuiya1GCmsE4OAU7YAYEgOEyAdmLe16CcL2wSclOqtEN7L/EKRrsw73vQaQmDEE/yIEEP0in01GQB9YP4ZqopsgEOOOx8s062OQF3DgISr8QpeDaoKa4LbBsiMIpEZbREKXIaB4vtRwZUhmdIsx0QJipKYxaHhhUVRodEFXDgYIoGtJTfJkx9o9pnz1jtWBFKsFPVbnAoB1cgbhP+lgBtKkLEXDTqPP/UdcnSXANBj5Gknw5BG7BLpj1YFaegOFPs9ImrkXSecDKkIqtuIRyF9tgDrR+cRd+5H8IQzq7OUA5q+Qoyy4axSJ4BHsgDXoaCsOFCWkbXhlFJiMMmuxGcQw8e9wuUqIhrIxir4yluI6YkVghCvLA+iFcExXBCclcD99sqJGkISoISr8QpeDaoGigaV1SQ3xK59hw04yGKEXGNsQPGDwp26MhzHRAmGmzPabyY4amMMsJbIVQNaQS/JaxMoNznz1jNK2HDNZ8VpXUMs+gA9xJD/G6j7GX5uydf1CcY9Ljvwj4WIXqZ+UouJC59ZdGcVbMKUUNfecu2kBMJr4p7qLiInQX+zSK9Rl9A06ZKdzn8f+3AAAAAElFTkSuQmCC" data-bm="44"></span></a></li>
+                   <li><a href="#" style="padding-left:56px">显示主页图片<span class="opener open"><img class="rms_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAgCAYAAAB+ZAqzAAACH0lEQVRYw9WYzS8DURTFh4WFj4XYaITEwr4Rmy5Ek0YaYoEdO4mk7aIVG2XDzsaf0n+BjYQQjY+IhCrSWGMs0LTacU7dJ6NqwZsxo8kvue30zTu9b+69JzUsyzIU2Wy2D6xm318meAGvLlGWPY7BIuiya1GCmsE4OAU7YAYEgOEyAdmLe16CcL2wSclOqtEN7L/EKRrsw73vQaQmDEE/yIEEP0in01GQB9YP4ZqopsgEOOOx8s062OQF3DgISr8QpeDaoKa4LbBsiMIpEZbREKXIaB4vtRwZUhmdIsx0QJipKYxaHhhUVRodEFXDgYIoGtJTfJkx9o9pnz1jtWBFKsFPVbnAoB1cgbhP+lgBtKkLEXDTqPP/UdcnSXANBj5Gknw5BG7BLpj1YFaegOFPs9ImrkXSecDKkIqtuIRyF9tgDrR+cRd+5H8IQzq7OUA5q+Qoyy4axSJ4BHsgDXoaCsOFCWkbXhlFJiMMmuxGcQw8e9wuUqIhrIxir4yluI6YkVghCvLA+iFcExXBCclcD99sqJGkISoISr8QpeDaoGigaV1SQ3xK59hw04yGKEXGNsQPGDwp26MhzHRAmGmzPabyY4amMMsJbIVQNaQS/JaxMoNznz1jNK2HDNZ8VpXUMs+gA9xJD/G6j7GX5uydf1CcY9Ljvwj4WIXqZ+UouJC59ZdGcVbMKUUNfecu2kBMJr4p7qLiInQX+zSK9Rl9A06ZKdzn8f+3AAAAAElFTkSuQmCC" data-bm="44"></span></a></li>
+                </ul>
+            </div>
+        </ul>
+    </header>
+    <div class="container">
+        <div id="logo"></div>
+        <form action=" ">
+            <span class="search-tab" index="1">国内版</span>
+            <span class="search-tab noselected" index="2">国际版</span>
+            <input type="text" class="search-input-text" />
+            <input type="submit" class="submit" value="" />
+            <div class="searchTip" id="searchTip">
+            	<ul></ul>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <ul class="footer1">
+            <li><a href="#">京ICP备10036305号</a></li>
+            <li><a href="#">京公网安备11010802022657号</a></li>
+        </ul>
+        <ul class="footer2">
+            <li><a href="#">隐私声明和 Cookie</a></li>
+            <li><a href="#">法律声明</a></li>
+            <li><a href="#">广告</a></li>
+            <li><a href="#">报告</a></li>
+            <li><a href="#">帮助</a></li>
+            <li><a href="#">反馈</a></li>
+        </ul>
+        <p><a href="#">© 2018 Microsoft</a></p>
+    </footer>
+</body>
+<script src="data.js"></script>
+<script src="min.js"></script>
+</html>
