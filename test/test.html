@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <mate charset="utf-8" />
+    <title>爬虫测试</title>
+ </head>
+<body>
+ <ul id="t1" class="t1">
+     <li><a>html1</a></li>
+     <li><a>html2</a></li>
+ </ul>
+ <ul id="t2" class="t2">
+     <li><a href="javascript:alert('t2/li/a[0] is clicked')"></a></li>
+     <li><a href="javascript:alert('t2/li/a[1] is clicked')"></a></li>
+ </ul>
+ 
+ <ul id="t3" class="t3">
+
+ </ul> 
+ <ul id="t4" class="t4">
+
+ </ul>
+ <script>
+    var t2 = document.getElementById("t2");
+    
+    for(var j=0;j<2;j++){
+    
+      t2.getElementsByTagName("a")[j].innerHTML=`js生成文本数据${j}`;
+    
+    }
+    
+    var t3 = document.getElementById("t3");
+    t3.innerHTML=`<li><a>js拼接标签1</a></li><li><a>js拼接标签2</a></li>`;
+    
+    
+    var t4 = document.getElementById("t4");
+    for(var i=0;i<2;i++){
+      var li=document.createElement("li");
+      var link=document.createElement("a");
+      link.innerHTML=`js生成dom节点${i}`;
+      li.appendChild(link);
+      t4.appendChild(li);
+    }
+    
+    </script>
+</body>
+</html>
