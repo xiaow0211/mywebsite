@@ -1,3 +1,19 @@
+/*
+
+ */
+
+ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ) { 
+    var wrap = document.getElementById('wrap');
+    wrap.style.minWidth="0px";
+    var search = document.getElementById('search');
+    search.style.position = 'absolute';
+    search.style.top = "100px";
+    search.style.left = "50%";
+    search.style.transform = "translateX(-50%)";
+    var articleBox = document.getElementById('articleBox');
+    articleBox.style.marginTop = '420px';
+ }
+
 var searchTags = document.getElementById('searchTags');
 var input = document.getElementById('input');
 var tip = document.getElementById('searchTip');
@@ -16,7 +32,7 @@ var Result = [];
 })();
 /*创建文章盒子*/
 function createBox(DATA) {
-    var box = document.getElementById('box');
+    var box = document.getElementById('articleBox');
     box.innerHTML = "";
     DATA.forEach(function(el, index) {
         var aLi = document.createElement('li');

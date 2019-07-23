@@ -1,4 +1,14 @@
+/*
 
+ */
+ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ) { 
+    var welcomBox = document.getElementById('welcom');
+    welcomBox.style.width  = "200px";
+    welcomBox.style.fontSize = "14px";
+    welcomBox.style.letterSpacing = "1px";
+
+  
+ }
 /*时间显示*/
 (function() {
     var timer = document.getElementById('timer');
@@ -45,7 +55,7 @@
         return;
     }
     document.onscroll = function() {
-        if (document.documentElement.scrollTop >= window.screen.availHeight) {
+        if (document.documentElement.scrollTop >= window.screen.availHeight/2) {
             totop.style.display = "block";
         } else {
             totop.style.display = "none";
