@@ -1,0 +1,95 @@
+<html>
+  <head>
+     <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+     <title>戳泡泡</title>
+  </head>
+  <style>
+*{
+margin:0;
+padding:0;
+}
+body{
+width:100%;
+overflow:hidden;
+}
+@font-face {font-family: "iconfont";
+  src: url('iconfont/iconfont.eot?t=1564209625822'); /* IE9 */
+  src: url('iconfont/iconfont.eot?t=1564209625822#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAN0AAsAAAAACAwAAAMoAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCfgqDZIMkATYCJAMMCwgABCAFhG0HThv6BsgusG3YEySYa+ACEhRg4YG4eIC/33tu/FyFbRSJTRGFw9GARgPbjKbDxgZpgfdX3tfLQOyVvk4jKOjOZJJ8dHolnYybrLpvCizUN0BAXvjS+v+fy/FdY4nMD5TLHJPPKo3ie970MYZFEQ1hbBi78iLuE1DXayRuqaiiAXxkxrKAcK7IPPikTHJNdVAVlEv2ZgjXPFXj/HgdwJX/+/APtnxAVEpgPLR3VihBzhf5KLtPK6bpSNNMG88BdoiEMSATTkpde9zD1Bh3dSXloQ+sa1rgS/6fL+KKVvuHRxAJZTAqG8EQTEe+iK1yamKYFnHuhyijjmvgGZE667JyX37+cWh8gI/vRO38feSx+9HvvvfR9geNjx4NcN94O0R0y20dd/Fu0tZ7C+8kbrrdveBoBFfpg44bHcfEU8M8h2jJeiVbXu43PKj3Nz982GJNaJqe3Xi5uWnHtSEFZ23PMKbZcGpudURUzur+pdC1m5Bgby+FwtBZ0bo1sPz9P1ru6gGFjICA6bq2W6ynz8BvfvPOqZOjQwMvuYIqP/9zyNX9WxoNpFwB58zI7bxdN0pefjc37ZLD8h4qgMKYD+Xd0NCzcIgxp1A2Hv/z5/CGEpTocF+2zuXqSi+gBygMx2W6/EsEPjWDSHk2cHRnNHUHZ+yTB8CnEPYEytp5QPVG3YGf1i1Dkcylhill2Vi0RXo42fJzHBEo4DYF8rV72V/VhQkU1ZSYQVTRA0lVH5JJY1DSYBzKqmahblTx4QYdKHch+wIjZgMIWh2AqNktJK1uIJn0Akq6/YCy1tyh7iSEn9lgIMUvn2KeYQkJ45EiOuzEsjK/oLoOy6M1nialPrMJU0OJIqvJks0WYzumY2wwxsg2xggi1KGjIvAY1jQHclJHHxaZqZcxZ5rZTMreZBIdOvhZRGE8BpMggvEQhcjBjridGb/c9+tgstE0PFqDqfA2wSiD0j9iZWJpgRSr7K0w1/KKYQyZDcMQCEE56JAi4MA0M+WAOMtn9cFEjElvj4RTGjNqRtqqTPNr9OeLgzrjwhTcOHfOA1qn2DWs8oo8mreP8htDM0LHCAA=') format('woff2'),
+  url('iconfont/iconfont.woff?t=1564209625822') format('woff'),
+  url('iconfont/iconfont.ttf?t=1564209625822') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont/iconfont.svg?t=1564209625822#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+canvas{
+position:absolute;
+top:0;
+width:100%;
+height:100%;
+}
+.shade{
+display:none;
+position:absolute;
+background:#rgba(0,5,24,0.85);
+left: 0;
+right:0;
+top:0;
+bottom:0;
+z-index:100;
+padding:60px 40px;
+box-size:border-box;
+}
+.shade #p{
+width:100%;
+font-size:24px;
+color:#eee;
+line-height:100%;
+text-indent:48px;
+}
+#close{
+display:none;
+color:#eee;
+font-size:18px;
+text-align:center;
+line-height:100%;
+text-decoration:underline;
+}
+#musicButton{
+display:none;
+font-family: "iconfont" !important;
+position:absolute;
+width:40px;
+height:40px;
+right:10px;
+top:10px;
+border:1px solid #eee;
+border-radius:50px;
+color:#eee;
+font-size:26px;
+text-align:center;
+line-height:40px;
+z-index:100;
+transform-origin:50% 50%;
+}
+.play:before {
+  content: "\e666";
+}
+.pause:before{
+  content: "\e667";
+}
+ </style>
+  <body>
+  <div class="shade" id="shade"><p id="p"></p><br><br><br><br><p id="close">关闭</p></div>
+  <span id="musicButton" class="pause"></span>
+  <canvas id="canvas"></canvas>
+  <script src="js/Math.js"></script>
+  <script>
+  var timestamp = (new Date()).getTime();
+  var new_element = document.createElement("script");
+  new_element.setAttribute("type", "text/javascript");
+  new_element.setAttribute("src", "js/main.js?v="+timestamp);
+  document.body.appendChild(new_element);
+  </script>
+  <body>
+</html>
