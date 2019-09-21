@@ -8,8 +8,8 @@
 </head>
 <div id="aeEditorPreview"></div>
 <body>
-    <script src="https://www.wxw0211.top/js/jquery-3.4.1.js"></script>
-    <script src="https://www.wxw0211.top/ae_Animation/bo.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="bo.js"></script>
     <script>
     ! function() {
         function n(n, e, o) { _.loop = n, _.playSegments(e, !0), p = o }
@@ -25,7 +25,7 @@
         function a(o) { var o = l[o - 1]; "number" == typeof o.frame_s ? e(o.play, o.loop, o.frame_s, o.stage) : n(o.loop, o.frame_s, o.stage) } var r = $("#aeEditorPreview"),
             l = [{ "stage": 1, "isRange": true, "frame_s": [1, 150], "loop": false, "play": false, "endToStage": 2 }, { "stage": 2, "isRange": false, "frame_s": 120, "loop": true, "play": true, "endToStage": null }],
             f = [],
-            i = false; if ("undefined" != typeof bodymovin) { var _ = bodymovin.loadAnimation({ container: r[0], renderer: "canvas", loop: i, autoplay: !1, path: "https://www.wxw0211.top/ae_Animation/data.json" }),
+            i = false; if ("undefined" != typeof bodymovin) { var _ = bodymovin.loadAnimation({ container: r[0], renderer: "canvas", loop: i, autoplay: !1, path: "data.json" }),
                 p = 0; if (_.addEventListener("complete", function(n) { var e = o();
                     e && a(e.endToStage) }), _.addEventListener("DOMLoaded", function() { if (l.length) { for (var n = null, e = 0, o = l.length; e < o; e++)
                             if (1 === l[e].stage) { n = l[e]; break } n && a(1) } else _.play() }), f.length > 0) { for (var u = [], g = {}, d = 0, v = f.length; d < v; d++) g[f[d].type] || (u.push(f[d].type), g[f[d].type] = !0); for (var y = 0, c = u.length; y < c; y++) ! function(n) { r.on(n, function() { var e = t(p, n);
