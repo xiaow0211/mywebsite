@@ -3,11 +3,16 @@
 <head>
   <mate charset="utf-8"/>
   <title>video</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 
-<video src="video.mp4" src-path="" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video>
+<video id="video" src="video.mp4" src-path="" autoplay playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video>
 
+<script>
+	var video = document.getElementById('video')
+	window.onclick = function(){
+		video.play()
+	}
+</script>
 </body>
 </html>
