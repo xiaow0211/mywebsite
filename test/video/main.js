@@ -9,15 +9,12 @@ video.addEventListener('canplay', function() {
     window.onclick = function() {
         video.play();
         play();
-
     }
 }, false)
 
 function play() {
-    
         ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
         raf(play)
-    
 }
 video.onended = function() {
     video.play();
