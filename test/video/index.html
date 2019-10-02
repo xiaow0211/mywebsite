@@ -17,9 +17,10 @@
     }
 
     video {
-        display: none;
         position: absolute;
         top: 0;
+        height: 0px;
+        width: 0px;
     }
 
     audio {
@@ -30,20 +31,10 @@
 
 <body>
     <video id="video" autoplay src="video.mp4"></video>
+    <canvas id="canvas"></canvas>
     <audio id="audio" src="music.mp3">
     </audio>
-    <script>
-    var video = document.getElementById('video');
-    var audio = document.getElementById('audio');
-    video.onclick = function() {
-        video.play()
-    }
-    video.onended = function() {
-        video.currentTime = 22;
-        video.play()
-        audio.volume = 0.15;
-        audio.play()
-    }
+    <script src="main.js">
     </script>
 </body>
 
