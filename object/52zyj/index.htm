@@ -25,7 +25,7 @@
 			margin: 30px auto;
 			/*padding: 20px;*/
 			height: 669px;
-			border: 1px solid #000;
+			/*border: 1px solid #000;*/
 			background: center / contain no-repeat url("image/BG.png");
 		}
 		#boxA{
@@ -82,13 +82,13 @@
 var boxA = document.getElementById('boxA');
 var heart = document.getElementById('heart');
 
-var stringA = "层面上@看#那我美丽聪明";
+var stringA = "宝贝：#@@今天是咱们在一起的第两个月啦！遇到你是我这辈子最大的幸福，非常荣幸能成为你的男朋友，陪你一起学习，一起吃喝玩乐闹，一起品尝生活的欢乐和风雨。非常感谢你对我那锲而不舍的“感化”和“教学”，是你教会了我如何去爱一个人，也是你一直容忍我的直男属性和其他的缺点；也是你让我感受到了无微不至的体贴，感受到了爱情的美妙，和你在一起的每一分每一秒都是快乐的。#@@虽然咱们之间才刚刚走过两个月，但我内心已经认定你了，你就是我上天赐予我最好的礼物。未来的路很长，我愿意陪你慢慢走，一起欣赏沿途的风景，一起品尝生活的酸甜苦辣咸。#@@。。。#@@不知道该写点啥了，抓耳挠腮搜肠刮肚也憋不出来几句浪漫的话了QAQ。#@@我一定会一直在你身边陪着你，守护你，用心去爱你。这个誓言我要用一辈子来守护，我要用一辈子来证明！#@@@@@@@@@@@@@2022年6月20日#@@@@@@@@@@@永远爱你的王憨憨";
 var index = 1;
 function run() {
 	setTimeout(function(){
 		var writeText = stringA.slice(index-1,index);
 		if(writeText == "@"){
-			boxA.innerHTML = boxA.innerText+'&nbsp;';
+			boxA.innerHTML = boxA.innerText+'&emsp;';
 		}else if(writeText == "#"){
 			boxA.innerHTML = boxA.innerText+'\n';
 			console.log("mm")
@@ -102,7 +102,7 @@ function run() {
 		}else{
 			heartRun()
 		}
-	},20)
+	},50)
 
 }
 
